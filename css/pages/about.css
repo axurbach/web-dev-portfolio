@@ -1,0 +1,88 @@
+.about-page::before {
+    filter: blur(5px) grayscale(100%);
+    opacity: 0.22;
+}
+
+.page-panel {
+    width: min(38rem, calc(100vw - 12rem));
+    padding: 0 0 0 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.page-panel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--colour-highlight);
+}
+
+.page-kicker {
+    margin: 0;
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+    color: var(--colour-highlight);
+}
+
+.page-title {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1.55rem, 3vw, 2.35rem);
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    color: var(--colour-dark);
+}
+
+.page-body {
+    margin: 0;
+    max-width: 48ch;
+    font-size: 0.76rem;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--colour-highlight);
+    text-transform: none;
+}
+
+@media (max-width: 900px) {
+    .header,
+    .footer {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .main {
+        padding-left: 2rem;
+    }
+
+    .page-panel {
+        width: calc(100vw - 4rem);
+        padding: 0 0 0 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-nav {
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        padding-left: 1rem;
+    }
+
+    .page-panel {
+        width: calc(100vw - 2rem);
+        padding-left: 0.75rem;
+    }
+
+    .page-title {
+        font-size: 1.2rem;
+    }
+}

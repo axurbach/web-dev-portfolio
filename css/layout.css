@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 6rem;
+    gap: 1rem;
+}
+
+.header {
+    display: flex;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wordmark {
+    color: var(--colour-dark);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header-nav a {
+    color: var(--colour-highlight);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition: color 120ms ease;
+}
+
+.header-nav a:hover,
+.header-nav a.is-active {
+    color: var(--colour-dark);
+}
+
+.footer {
+    display: flex;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy,
+.footer-label {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+    color: var(--colour-highlight);
+    text-transform: uppercase;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Urbach</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="home-page">
+    <header class="header">
+        <a href="index.html" class="header-wordmark">Alexander :: Urbach</a>
+        <nav class="header-nav">
+            <a href="index.html" class="is-active">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="ascii">
+            <pre class="ascii-output"></pre>
+        </section>
+        <section class="home-composition" aria-labelledby="home-title">
+            <p class="home-kicker">Creative Developer / Design Engineer / Ottawa / Montreal</p>
+            <h1 id="home-title" class="home-title">
+                <span>Digital systems</span>
+                <span>with an</span>
+                <span>editorial pulse.</span>
+            </h1>
+            <p class="home-intro">I build portfolio sites and product interfaces that feel structured, minimal, and emotionally precise.</p>
+            <div class="home-meta" aria-label="Current focus areas">
+                <span>Frontend architecture</span>
+                <span>Creative coding</span>
+                <span>Interaction design</span>
+            </div>
+            <nav class="home-links" aria-label="Homepage actions">
+                <a href="contact.html">Start a project</a>
+                <a href="mailto:axurbach@gmail.com">axurbach@gmail.com</a>
+            </nav>
+        </section>
+        
+    </main>
+
+    <video
+        id="ascii-video"
+        class="ascii-video"
+        src="assets/videos/ascii/ascii-test.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+    ></video>
+
+    <canvas id="ascii-canvas" class="ascii-canvas"></canvas>
+
+    <footer class="footer">
+        <span class="footer-copy">&copy; Alexander Urbach 2026</span>
+        <span class="footer-label">Web Development Portfolio</span>
+    </footer>
+
+    <script src="js/pages/home/ascii.js" defer></script>
+</body>
+</html>
