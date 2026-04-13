@@ -38,12 +38,84 @@
             <h1 id="about-title" class="page-title">About</h1>
             <p class="page-body">Alexander Urbach is a web developer and design engineer based in Ottawa / Montreal, completing the Interactive Media Design program at Algonquin College. His work sits at the intersection of clean systems, visual precision, and creative coding.</p>
             <p class="page-body">Fluent across the full frontend stack — HTML, CSS, JavaScript — with a focus on portfolio-quality interfaces that balance technical structure with expressive visual direction.</p>
+            <button type="button" class="about-resume-link" data-resume-open>View Resume</button>
         </section>
     </main>
+
+    <dialog class="resume-dialog" aria-labelledby="resume-title">
+        <article class="resume-sheet">
+            <button type="button" class="resume-close" data-resume-close>Close</button>
+
+            <header class="resume-header">
+                <div>
+                    <p class="resume-kicker">Creative Resume</p>
+                    <h2 id="resume-title" class="resume-name">Alexander Urbach</h2>
+                    <p class="resume-summary">Frontend-focused creative technologist with experience across customer-facing work, visual media, and independent client projects. Strong with communication, fast-moving production environments, and building clean, responsive web interfaces.</p>
+                </div>
+                <p class="resume-meta">Ottawa / Montreal<br>English + French<br>Web Development / Creative Tech</p>
+            </header>
+
+            <section class="resume-section" aria-labelledby="resume-experience-title">
+                <h3 id="resume-experience-title" class="resume-section-title">Experience</h3>
+                <div class="resume-stack">
+                    <div>
+                        <p class="resume-item-title">Freelance Photographer :: 17099450a</p>
+                        <p class="resume-role">Sep 2024 - Present / Ottawa / Montreal</p>
+                        <ul class="resume-bullet-list">
+                            <li>Provide concert and event photography for artists and venues with a consistent editorial visual style.</li>
+                            <li>Deliver edited image sets for social, promotional, and publication use.</li>
+                            <li>Manage client communication, scheduling, delivery workflows, and creative direction.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="resume-item-title">Sales Associate / Sales Coach :: H&amp;M</p>
+                        <p class="resume-role">Aug 2023 - Nov 2024 / Ottawa, ON</p>
+                        <ul class="resume-bullet-list">
+                            <li>Delivered high-quality customer service in a fast-paced retail environment.</li>
+                            <li>Supported product selection, styling decisions, transactions, returns, and issue resolution.</li>
+                            <li>Trained new team members on floor operations, communication, and sales technique.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section" aria-labelledby="resume-skills-title">
+                <h3 id="resume-skills-title" class="resume-section-title">Skills</h3>
+                <ul class="resume-skill-list">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Responsive interface design</li>
+                    <li>Customer service and communication</li>
+                    <li>Time management and multitasking</li>
+                    <li>Creative problem solving</li>
+                    <li>Adobe Photoshop and Lightroom</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Bilingual: English and French</li>
+                </ul>
+            </section>
+
+            <section class="resume-section" aria-labelledby="resume-projects-title">
+                <h3 id="resume-projects-title" class="resume-section-title">Projects</h3>
+                <ul class="resume-project-list">
+                    <li>Built responsive web interfaces using HTML, CSS, and JavaScript with a strong focus on layout, typography, and usability.</li>
+                    <li>Designed and launched the photography portfolio 17099450a.com with a custom editorial visual system.</li>
+                    <li>Developed a JavaScript to-do application with DOM-based interactions and state-driven UI behavior.</li>
+                </ul>
+            </section>
+
+            <section class="resume-section" aria-labelledby="resume-education-title">
+                <h3 id="resume-education-title" class="resume-section-title">Education</h3>
+                <ul class="resume-education-list">
+                    <li>Algonquin College :: Interactive Media Design / Ottawa, ON / Graduation 2026</li>
+                </ul>
+            </section>
+        </article>
+    </dialog>
 
     <footer class="footer">
         <span class="footer-copy">&copy; Alexander Urbach 2026</span>
         <span class="footer-label">Web Development Portfolio</span>
     </footer>
+
+    <script src="js/shared/resume-modal.js" defer></script>
 </body>
 </html>

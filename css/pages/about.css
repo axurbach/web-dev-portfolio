@@ -50,6 +50,27 @@
     text-transform: none;
 }
 
+.about-resume-link {
+    margin-top: 0.5rem;
+    justify-self: start;
+    align-self: flex-start;
+    border: 0;
+    border-bottom: 1px solid var(--colour-highlight);
+    background: transparent;
+    color: var(--colour-dark);
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.about-resume-link:hover,
+.about-resume-link:focus-visible {
+    border-bottom-color: var(--colour-dark);
+}
+
 @media (max-width: 900px) {
     .header,
     .footer {
