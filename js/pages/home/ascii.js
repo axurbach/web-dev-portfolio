@@ -1,7 +1,16 @@
 const video = document.getElementById("ascii-video");
 const canvas = document.getElementById("ascii-canvas");
-const ctx = canvas.getContext("2d", { willReadFrequently: true });
 const asciiOutputs = document.querySelectorAll(".ascii-output");
+
+if (!video || !canvas || asciiOutputs.length === 0) {
+    throw new Error("ASCII renderer elements are missing from the page.");
+}
+
+const ctx = canvas.getContext("2d", { willReadFrequently: true });
+
+if (!ctx) {
+    throw new Error("Could not initialize ASCII canvas context.");
+}
 
 /*
 Darker pixels should use denser characters.

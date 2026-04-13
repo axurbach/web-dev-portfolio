@@ -11,20 +11,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body class="about-page">
     <header class="header">
         <a href="index.html" class="header-wordmark">Alexander :: Urbach</a>
-        <nav class="header-nav">
+        <nav class="header-nav" aria-label="Primary navigation">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="about.html" class="is-active">About</a>
@@ -38,11 +30,11 @@
             <h1 id="about-title" class="page-title">About</h1>
             <p class="page-body">Alexander Urbach is a web developer and design engineer based in Ottawa / Montreal, completing the Interactive Media Design program at Algonquin College. His work sits at the intersection of clean systems, visual precision, and creative coding.</p>
             <p class="page-body">Fluent across the full frontend stack — HTML, CSS, JavaScript — with a focus on portfolio-quality interfaces that balance technical structure with expressive visual direction.</p>
-            <button type="button" class="about-resume-link" data-resume-open>View Resume</button>
+            <button type="button" class="about-resume-link" data-resume-open aria-haspopup="dialog" aria-controls="resume-dialog">View Resume</button>
         </section>
     </main>
 
-    <dialog class="resume-dialog" aria-labelledby="resume-title">
+    <dialog id="resume-dialog" class="resume-dialog" aria-labelledby="resume-title">
         <article class="resume-sheet">
             <button type="button" class="resume-close" data-resume-close>Close</button>
 

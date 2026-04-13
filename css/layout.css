@@ -151,16 +151,6 @@ main {
     align-items: flex-start;
 }
 
-.resume-kicker,
-.resume-meta,
-.resume-role,
-.resume-item-note,
-.resume-skill-list,
-.resume-project-list,
-.resume-education-list {
-    font-family: 'Red Hat Mono', monospace;
-}
-
 .resume-kicker {
     margin: 0 0 0.35rem 0;
     font-size: 0.68rem;
